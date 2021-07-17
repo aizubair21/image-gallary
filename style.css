@@ -1,0 +1,193 @@
+.app .top .top-left{
+    position:relative;
+}
+
+.app .top .top-left .top-left-content{
+    position:absolute ;
+    background-color: white;;
+    height:500px;
+    padding: 10px;;
+    width: 200px;
+    top:45px;
+    left:0;
+    display:none;
+    transition: ease-in .5s;
+   
+
+}
+
+.top-left-content ul li a{
+    color: white;
+    width: 150px;;
+    padding: 15px;
+    border: 1px solid white;
+    margin:5px;
+    background-color: gray;
+    transition: all linear 0.5s;
+}
+
+.top-left-content ul span{
+    float: right;
+    color:rgb(12, 5, 5);
+    border-radius: 50%;
+    font-size: 20px;
+    padding:5px;
+    cursor: pointer;
+    transition:all linear .3s;
+}
+
+.top-left-content ul span:hover{
+    color:red;
+}
+
+.top-left-content ul li a:hover{
+    opacity:.7;
+}
+
+.top .top-left .left-container i:hover{
+    color: red;
+}
+
+.top .top-right{
+    position: relative;
+}
+
+.top .top-right .content{
+    position: absolute;
+    display: inline-block;
+    top:55px;
+    right: 0px;
+    text-align: right;
+    padding: 10px;
+    height: 70vh;
+    display: none;
+    background-color:rgba(255, 255, 255, 0.993);
+}
+
+
+
+.top .top-right .content a{
+    padding: 10px;
+    width:150px;
+    color: white;
+    margin-top: 2px;
+    background-color: rgb(129, 129, 129);
+}
+
+.top .top-right .content span{
+    float: left;
+    font-size: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.top .top-right .content span:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+  @keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+  
+  
+  
+  .middle-element{
+	  width: 100%;
+	}
+	
+    #gallery{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+	
+	#gallery .img{
+		width: 30%;
+		margin-bottom: 10px;
+		padding:5px;
+		box-shadow:0px 0px 5px rgba(0,0,0, 0.2);
+	}
+	
+    #gallery .img img{
+		cursor: pointer;
+		width: 100%;
+		height: 100px;
+	}
+	
+	#gallery .img:hover img{
+		opacity: 0.8;
+		
+	}
+	#galleryView{
+		border: 1px solid black;
+		padding: 10px;
+		display: block;
+		margin: 0 auto;
+		display: none ;
+        position:relative;
+	}
+	#galleryView img{
+		width: 100%;
+        padding:5px;
+		
+	}
+	#galleryView span{
+		position:absolute;
+		top: 10px;
+		right: 10px;
+		cursor:pointer;
+		color: white;
+		background-color:black;
+		padding: 5px;
+	}
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 3s;
+        animation-timing-function: all linear;
+      }
+  
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+  
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.7s;
+        animation: animatezoom 0.7s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+    }
+        
+    @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+    }
+
+    

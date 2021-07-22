@@ -20,9 +20,9 @@ function openGallery(image){
 	
 	var expandArea = document.getElementById("expadedImage");
 	expandArea.src = image.src;
-	var imageText;
 	
 	expandArea.parentElement.style.display = "block";
+	
 	document.getElementById("gallery").style.visibility = "hidden";
 	//alert(image);
 };
